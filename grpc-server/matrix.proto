@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "/stubs";
+service compute{
+  rpc multiplyRowByColumn(multiplyBlockRequest) returns (multiplyBlockResponse);
+}
+
+message multiplyBlockRequest{
+  repeated sfixed64 row = 1;
+  repeated sfixed64 column = 2;
+  int32 rowId = 3;
+  int32 columnId = 4;
+}
+
+message multiplyBlockResponse{
+  sfixed64 element = 1;
+  int32 rowId = 2;
+  int32 columnId = 3;
+}

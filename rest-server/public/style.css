@@ -1,0 +1,72 @@
+:root {
+  /* vars */
+  --light-gray: #cacfd6;
+  --old-lavender: #71677c;
+  --midnight-green: #104f55;
+  --middle-blue-green: #9fd8cb;
+  --pine-tree: #2d3319;
+  /* --pale-light-gray: #e8ecf1; */
+  --white: white;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pine-tree);
+}
+
+.title {
+  background-color: var(--middle-blue-green);
+  color: var(--midnight-green);
+  text-align: center;
+  height: 10vh;
+  border-bottom: 15px solid var(--midnight-green);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  background-color: var(--light-gray);
+}
+
+#left {
+  flex: 0.75;
+}
+
+.panel {
+  margin: 20px;
+  height: 80vh;
+  background-color: var(--old-lavender) !important;
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  
+
+}
+
+.section-container {
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--middle-blue-green);
+  margin: 20px;
+  padding-left: 20px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: center;
+}
+
+.button-label {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--midnight-green);
+}
+#file-upload-btn {
+  margin: 5px 10px;
+}
+
+#right {
+  flex: 1;
+}
